@@ -25,7 +25,7 @@ module.exports = {
   MCD_JOIN_OMG_A: require('./abis/GemJoin2.json'),
   MCD_JOIN_DGD_A: require('./abis/GemJoin2.json'),
   MCD_JOIN_GNT_A: require('./abis/GemJoin4.json'),
-  MCD_JOIN_DAI: require('./abis/DaiJoin.json'),
+  MCD_JOIN_DAI: require('./abis/dotBtcJoin.json'),
   MCD_JUG: require('./abis/Jug.json'),
   MCD_END: require('./abis/End.json'),
   MCD_ESM: require('./abis/ESM.json'),
