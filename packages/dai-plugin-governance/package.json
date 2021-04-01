@@ -1,11 +1,11 @@
 {
-  "name": "@makerdao/dai-plugin-governance",
-  "description": "A dai.js plugin for adding MKR governance support to dapps.",
-  "version": "0.12.44",
+  "name": "@abmprotocl/dotbtc-plugin-governance",
+  "description": "A dotbtc.js plugin for adding dotBtc governance support to dapps.",
+  "version": "0.1.3",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/makerdao/dai-plugin-governance.git"
+    "url": "git+https://github.com/makerdao/dai-plugin-governance.git"
   },
   "main": "dist/index.js",
   "unpkg": "umd/index.js",
@@ -42,5 +42,18 @@
     "@makerdao/dai": "^0.31",
     "@makerdao/dai-plugin-config": "^0.2.14-rc.1",
     "web3-utils": "^1.2.6"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/makerdao/dai-plugin-governance/issues"
+  },
+  "homepage": "https://github.com/makerdao/dai-plugin-governance#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "dotbtc",
+    "plugin",
+    "governance"
+  ],
+  "author": "abmprotocol"
 }

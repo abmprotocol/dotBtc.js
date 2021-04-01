@@ -68,20 +68,20 @@ export default async function getEventHistory(cdpManager, managedCdp, cache) {
   const MCD_JOIN_DAI = cdpManager
     .get('smartContract')
     .getContractAddress('MCD_JOIN_DAI');
-  const MCD_JOIN_SAI = cdpManager
-    .get('smartContract')
-    .getContractAddress('MCD_JOIN_SAI');
+  // const MCD_JOIN_SAI = cdpManager
+  //   .get('smartContract')
+  //   .getContractAddress('MCD_JOIN_SAI');
   const CDP_MANAGER = cdpManager
     .get('smartContract')
     .getContractAddress('CDP_MANAGER');
-  const MIGRATION = cdpManager
-    .get('smartContract')
-    .getContractAddress('MIGRATION');
+  // const MIGRATION = cdpManager
+  //   .get('smartContract')
+  //   .getContractAddress('MIGRATION');
   const MCD_VAT = cdpManager.get('smartContract').getContractAddress('MCD_VAT');
   const MCD_CAT = cdpManager.get('smartContract').getContractAddress('MCD_CAT');
-  const OLD_MCD_CAT = cdpManager
-    .get('smartContract')
-    .getContractAddress('OLD_MCD_CAT');
+  // const OLD_MCD_CAT = cdpManager
+  //   .get('smartContract')
+  //   .getContractAddress('OLD_MCD_CAT');
 
   const id = managedCdp.id;
   if (cache[id]) return cache[id];
@@ -157,7 +157,7 @@ export default async function getEventHistory(cdpManager, managedCdp, cache) {
 
           const [joinDaiEvents, cdpMoveEvents] = await Promise.all([
             web3.getPastLogs({
-              address: [MCD_JOIN_DAI, MCD_JOIN_SAI],
+              address: [MCD_JOIN_DAI],
               topics: [
                 dart.lt(0) ? EVENT_DAI_ADAPTER_JOIN : EVENT_DAI_ADAPTER_EXIT,
                 proxy
@@ -322,8 +322,7 @@ export default async function getEventHistory(cdpManager, managedCdp, cache) {
     daiAdapterJoinExit,
     vatFrob,
     cdpManagerGive,
-    catBite(MCD_CAT, catUpgradeBlock),
-    catBite(OLD_MCD_CAT, genesis, catUpgradeBlock)
+    catBite(MCD_CAT, catUpgradeBlock)
   ];
 
   // eslint-disable-next-line require-atomic-updates

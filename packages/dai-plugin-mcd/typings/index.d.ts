@@ -26,6 +26,7 @@ export const MANA: Currency;
 export const OMG: Currency;
 export const REP: Currency;
 export const TUSD: Currency;
+export const USDT: Currency;
 export const USDC: Currency;
 export const WBTC: Currency;
 export const WETH: Currency;

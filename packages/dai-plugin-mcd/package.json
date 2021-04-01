@@ -1,7 +1,7 @@
 {
-  "name": "@makerdao/dai-plugin-mcd",
-  "description": "Plugin to add Multi-Collateral Dai support to dai.js",
-  "version": "1.6.29",
+  "name": "@abmprotocl/dotbtc-plugin-mcd",
+  "description": "Plugin to add Multi-Collateral Dai support to dotbtc.js",
+  "version": "0.1.4",
   "license": "MIT",
   "main": "dist/index.js",
   "unpkg": "umd/index.js",
@@ -28,5 +28,13 @@
     "bignumber.js": "^8.1.1",
     "rxjs": "^6.5.4"
   },
-  "types": "typings/index.d.ts"
+  "types": "typings/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "governance"
+  ],
+  "author": "abmprotocl"
 }
